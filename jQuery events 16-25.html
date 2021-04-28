@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMM646 Assignment 1: Practice with jQuery Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //window.alert("jQuery is working");
+
+            //STEP 16: Create button on webpage with an alert message indicating when button has been clicked using .click()
+            //$("#myButton").click(function(event) {
+            //    window.alert("Button was clicked - click.");
+            //});
+
+            //STEP 17: Create button on webpage with an alert message indicating when button has been clicked using .bind()
+            //$("#myButton").bind("click", function(event) {
+            //    window.alert("Button was clicked - bind.");
+            //})
+
+            //STEP 18: Create button on webpage with an alert message indicating when button has been clicked using .on()
+            //$("#myButton").on("click", function() {
+            //    window.alert("Button was clicked - on");
+            //});
+
+            //STEP 19: Create two buttons with .click() attached using a single .on() method handler.
+            //$("body").on({
+            //    click: function(event) {
+            //        window.alert("One of the buttons was clicked.");
+            //    }
+            //}, "button");
+
+            //STEP 20: Create a div on a webpage and handle three events: click, mouseenter, and mouseleave using the .on() method.
+            //$("div").on("click mouseenter mouseleave", function() {
+            //    window.alert("The mouse clicked or hovered on or off The Div.");
+            //})
+
+            //STEP 21: Add a span tag to the webpage and display three different messages within the tag when the user enters, leaves, or clicks on the span
+            //$('body').on({
+            //     click: function() {
+            //         $('span').text("The mouse clicked on The Span.");
+            //     },
+            //     mouseenter: function() {
+            //        $('span').text("The mouse entered The Span.");
+            //     },
+            //     mouseleave: function() {
+            //        $('span').text("The mouse left The Span.");
+            //     }
+            //}, 'span');
+
+            //STEP 22: Create a link within the webpage to modulemedia.com and: prevent it from redirecting to site, style the link to color:red, and display the node that triggered event in alert box.
+            //$(function () {
+            //    $('a').on('click', function (event) {
+            //        event.preventDefault();
+            //        $('a').css('color', 'red');
+            //        let handler = $('a').html(event.target.nodeName).prop('innerHTML');
+            //        window.alert(handler + '  triggered the event');
+            //    });
+            //});
+
+            //STEP 23: Display the width and height of the browser as it changes in a div.
+            //$(function() {
+            //    $(window).resize(function() {
+            //        $('div').text('Width:  ' + $(window).width() + ' px  ' + '  Height:  ' + $(window).height() + ' px')//;
+            //    });
+            //});
+
+            //STEP 24: Create a text field with an input tag and change the background to a light gray color when input has focus, and white otherwise.
+            //$('input:text').focus(
+            //   function() {
+            //       $(this).css('background-color', '#DFE3E6');
+            //   }
+            //);
+
+            //$('input:text').blur(
+            //   function() {
+            //       $(this).css('background-color', '#ffffff');
+            //   }
+            //);
+
+            //STEP 25:
+            //$('#step25').submit(function (event) {
+            //    event.preventDefault();
+            //    let isValid = true;
+
+            //    let nameo = $('#name').val().trim();
+            //    let email = $('#email').val().trim();
+
+            //    if (nameo === '') {
+            //        $('#name').css('border', '3px solid red');
+            //        window.alert('The name field is required.');
+            //        isValid = false;
+            //    } else {
+            //        $('#name').css('border', '1px solid black');
+            //    };
+            //    if (email === '') {
+            //        $('#email').css('border', '3px solid red');
+            //        window.alert('The email field is required.');
+            //        isValid = false;
+            //    } else {
+            //        $('#email').css('border', '1px solid black');
+            //    };
+                
+            //    if (isValid === true) {
+            //        $('#name').css('border', '3px solid green');
+            //        $('#email').css('border', '3px solid green');
+            //        $('#name').val(nameo);
+            //        console.log(nameo);
+            //        $('#email').val(email);
+            //        console.log(email);
+            //    }
+
+            //});
+        });
+    </script>
+</head>
+<body>
+    <!-- <button id="myButton1">Click Me 1</button>
+    <button id="myButton2">Click Me 2</button> -->
+
+    <!-- <div style="height:400px;width:400px;background-color:green;">The Div</div> -->
+
+    <!-- //<span style="font-size:15px;font-weight:bold;background-color:green;">The Span</span> -->
+
+    <!-- <div></div> -->
+
+    <!-- <div><a href="http://www.modulemedia.com">www.ModuleMedia.com</a></div> -->
+
+    <!-- <input class="one" type="text"></input>
+    <input type="text"></input> -->
+
+    <!-- <form id="step25">
+        Name:<br>
+        <input type="text" id="name"></input><br>
+        Email:<br>
+        <input type="text" id="email"></input><br><br>
+        <input type="submit" value="Submit"></input>
+    </form> -->
+
+</body>
+</html>
